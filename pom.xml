@@ -4,7 +4,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>HelloWorld</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <distributionManagement>
         <repository>
             <id>maven-releases</id>
@@ -19,7 +19,7 @@
     </distributionManagement>
     <scm>
         <developerConnection>scm:git:git@github.com:emile-jumo/deploy-library.git</developerConnection>
-      <tag>HelloWorld-0.0.1</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <properties>
