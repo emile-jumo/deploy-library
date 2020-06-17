@@ -1,0 +1,28 @@
+version: "3.6"
+
+services:
+  jenkins:
+    image: jenkins/jenkins
+    container_name: jenkins
+    ports:
+      - 8080:8080
+    networks:
+      - local
+    volumes:
+      - .docker-data/data:/var/jenkins_home
+      - .docker-data/certs:/certs/client
+
+  nexus:
+    image: sonatype/nexus3
+    container_name: nexus
+    ports:
+      - 8081:8081
+    networks:
+      - local
+    volumes:
+      - .docker-data/nexus/data:/nexus-data
+
+networks:
+  local:
+    name: local
+    driver: bridge
