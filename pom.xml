@@ -19,7 +19,6 @@
     </distributionManagement>
     <scm>
         <developerConnection>scm:git:git@github.com:emile-jumo/deploy-library.git</developerConnection>
-        <tag>HEAD</tag>
     </scm>
 
     <properties>
